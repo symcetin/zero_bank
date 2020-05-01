@@ -1,5 +1,5 @@
-target
 .idea
 *.iml
-DS_Store
+target
+.DS_Store
 test-output
