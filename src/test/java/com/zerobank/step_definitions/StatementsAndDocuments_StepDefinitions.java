@@ -36,13 +36,15 @@ public class StatementsAndDocuments_StepDefinitions {
 
     @Then("the downloaded file name should contain {string}")
     public void the_downloaded_file_name_should_contain(String name) {
-        File file = new File("/Users/semih/Downloads/8534567-"+name+".pdf");
+        String home = System.getProperty("user.home");
+        File file = new File(home+"/Downloads/8534567-"+name+".pdf");
         Assert.assertTrue(file.getName().contains(name));
     }
 
     @Then("the file type should be pdf")
     public void the_file_type_should_be_pdf() {
-        File file = new File("/Users/semih/Downloads/8534567-01-10-12.pdf");
+        String home = System.getProperty("user.home");
+        File file = new File(home+"/Downloads/8534567-01-10-12.pdf");
         Assert.assertTrue(file.getName().endsWith(".pdf"));
     }
 

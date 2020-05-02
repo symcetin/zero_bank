@@ -63,6 +63,11 @@ public class AddNewPayee extends PageBase {
         return alert.getText();
     }
 
+    public String getSuccessMessage(){
+        WebElement message = driver.findElement(By.id("alert_content"));
+        wait.until(ExpectedConditions.visibilityOf(message));
+        return message.getText();
+    }
 
 
 }

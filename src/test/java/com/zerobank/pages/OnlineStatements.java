@@ -34,10 +34,6 @@ public class OnlineStatements extends PageBase {
         BrowserUtilities.wait(2);
     }
 
-    public void getDownloadedFile(String filename){
-        File file = new File("/Users/semih/Downloads/8534567-31-11-09 (1).pdf"+filename);
-        assert file.exists() : "File not downloaded";
-    }
 
 
 }

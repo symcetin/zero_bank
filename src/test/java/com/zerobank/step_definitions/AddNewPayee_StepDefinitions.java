@@ -24,7 +24,9 @@ public class AddNewPayee_StepDefinitions {
     public void message_should_be_displayed(String message) {
        // Assert.assertTrue(addNewPayee.getSummary(message).isDisplayed());
 
-        Assert.assertEquals(addNewPayee.getSummary(),message);
+        Assert.assertEquals(addNewPayee.getSuccessMessage(),message);
+
+
     }
 
 }
